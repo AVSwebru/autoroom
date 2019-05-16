@@ -1,0 +1,11 @@
+.section-title {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 700;
+  &_light {
+    color: #fff;
+  }
+  &_dark {
+    color: #222;
+  }
+}

@@ -1,0 +1,44 @@
+.main-header {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+}
+
+.main-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+
+.main-header__logo-img {
+  width: 220px;
+  height: 50px;
+}
+
+.main-header__tel {
+  @include reset-link;
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.main-header__rightside {
+  text-align: right;
+}
+
+.main-header__social-link {
+  @include reset-link;
+  color: #a2868d;
+  font-weight: 500;
+  &:hover {
+    color: #a2868d;
+  }
+}

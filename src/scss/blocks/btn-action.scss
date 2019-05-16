@@ -1,0 +1,30 @@
+.btn-action {
+  @include reset-btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #d5dce4;
+  color: #222;
+  font-size: 18px;
+  line-height: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    width: 250px;
+    height: 250px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+  }
+  &:hover {
+    &::before {
+      border: 30px solid #93012a;
+    }
+  }
+}

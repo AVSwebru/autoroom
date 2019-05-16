@@ -1,11 +1,11 @@
 // 1. Your custom variables and variable overwrites.
-@import "variables";
+@import 'variables';
 
 $global-font-family: $font-base;
 
 // 2. Import default variables and available mixins.
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
+@import 'uikit/src/scss/variables-theme.scss';
+@import 'uikit/src/scss/mixins-theme.scss';
 
 // 3. Your custom mixin overwrites.
 
@@ -13,9 +13,9 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/uikit-theme.scss";
 
 // Base
-@import "uikit/src/scss/components/variables.scss";
-@import "uikit/src/scss/components/mixin.scss";
-@import "uikit/src/scss/components/base.scss";
+@import 'uikit/src/scss/components/variables.scss';
+@import 'uikit/src/scss/components/mixin.scss';
+@import 'uikit/src/scss/components/base.scss';
 
 // // Elements
 // @import "uikit/src/scss/components/link.scss";
@@ -26,12 +26,12 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/table.scss";
 // @import "uikit/src/scss/components/icon.scss";
 // @import "uikit/src/scss/components/form-range.scss";
-// @import "uikit/src/scss/components/form.scss"; // After: Icon, Form Range
+@import 'uikit/src/scss/components/form.scss'; // After: Icon, Form Range
 // @import "uikit/src/scss/components/button.scss";
 
 // Layout
 // @import "uikit/src/scss/components/section.scss";
-@import "uikit/src/scss/components/container.scss";
+@import 'uikit/src/scss/components/container.scss';
 // @import "uikit/src/scss/components/grid.scss";
 // @import "uikit/src/scss/components/tile.scss";
 // @import "uikit/src/scss/components/card.scss";
@@ -62,8 +62,8 @@ $global-font-family: $font-base;
 
 // JavaScript
 // @import "uikit/src/scss/components/accordion.scss";
-// @import "uikit/src/scss/components/drop.scss"; // After: Card
-// @import "uikit/src/scss/components/dropdown.scss"; // After: Card
+@import 'uikit/src/scss/components/drop.scss'; // After: Card
+@import 'uikit/src/scss/components/dropdown.scss'; // After: Card
 // @import "uikit/src/scss/components/modal.scss"; // After: Close
 // @import "uikit/src/scss/components/lightbox.scss"; // After: Close
 // @import "uikit/src/scss/components/slideshow.scss";
@@ -86,7 +86,7 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/countdown.scss";
 
 // Utilities
-// @import "uikit/src/scss/components/animation.scss";
+@import 'uikit/src/scss/components/animation.scss';
 // @import "uikit/src/scss/components/width.scss";
 // @import "uikit/src/scss/components/height.scss";
 // @import "uikit/src/scss/components/text.scss";
