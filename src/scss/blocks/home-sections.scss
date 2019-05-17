@@ -1,0 +1,13 @@
+.home-sections {
+  @include reset-list;
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.home-sections__item {
+  flex-grow: 1;
+  &:nth-of-type(2) {
+    position: relative;
+    top: -70px;
+  }
+}

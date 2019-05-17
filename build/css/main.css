@@ -441,6 +441,182 @@ template {
   --uk-breakpoint-xl: 1600px; }
 
 /* ========================================================================
+   Component: Table
+ ========================================================================== */
+/*
+ * 1. Remove most spacing between table cells.
+ * 2. Behave like a block element
+ * 3. Style
+ */
+.uk-table {
+  /* 1 */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* 2 */
+  width: 100%;
+  /* 3 */
+  margin-bottom: 20px; }
+
+/* Add margin if adjacent element */
+* + .uk-table {
+  margin-top: 20px; }
+
+/* Header cell
+ ========================================================================== */
+/*
+ * 1. Style
+ */
+.uk-table th {
+  padding: 16px 12px;
+  text-align: left;
+  vertical-align: bottom;
+  /* 1 */
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #999;
+  text-transform: uppercase; }
+
+/* Cell
+ ========================================================================== */
+.uk-table td {
+  padding: 16px 12px;
+  vertical-align: top; }
+
+/*
+ * Remove margin from the last-child
+ */
+.uk-table td > :last-child {
+  margin-bottom: 0; }
+
+/* Footer
+ ========================================================================== */
+.uk-table tfoot {
+  font-size: 0.875rem; }
+
+/* Caption
+ ========================================================================== */
+.uk-table caption {
+  font-size: 0.875rem;
+  text-align: left;
+  color: #999; }
+
+/* Alignment modifier
+ ========================================================================== */
+.uk-table-middle,
+.uk-table-middle td {
+  vertical-align: middle !important; }
+
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Divider
+ */
+.uk-table-divider > tr:not(:first-child),
+.uk-table-divider > :not(:first-child) > tr,
+.uk-table-divider > :first-child > tr:not(:first-child) {
+  border-top: 1px solid #e5e5e5; }
+
+/*
+ * Striped
+ */
+.uk-table-striped > tr:nth-of-type(odd),
+.uk-table-striped tbody tr:nth-of-type(odd) {
+  background: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; }
+
+/*
+ * Hover
+ */
+.uk-table-hover > tr:hover,
+.uk-table-hover tbody tr:hover {
+  background: #ffd; }
+
+/* Active state
+ ========================================================================== */
+.uk-table > tr.uk-active,
+.uk-table tbody tr.uk-active {
+  background: #ffd; }
+
+/* Size modifier
+ ========================================================================== */
+.uk-table-small th,
+.uk-table-small td {
+  padding: 10px 12px; }
+
+.uk-table-large th,
+.uk-table-large td {
+  padding: 22px 12px; }
+
+/* Justify modifier
+ ========================================================================== */
+.uk-table-justify th:first-child,
+.uk-table-justify td:first-child {
+  padding-left: 0; }
+
+.uk-table-justify th:last-child,
+.uk-table-justify td:last-child {
+  padding-right: 0; }
+
+/* Cell size modifier
+ ========================================================================== */
+.uk-table-shrink {
+  width: 1px; }
+
+.uk-table-expand {
+  min-width: 150px; }
+
+/* Cell link modifier
+ ========================================================================== */
+/*
+ * Does not work with `uk-table-justify` at the moment
+ */
+.uk-table-link {
+  padding: 0 !important; }
+
+.uk-table-link > a {
+  display: block;
+  padding: 16px 12px; }
+
+.uk-table-small .uk-table-link > a {
+  padding: 10px 12px; }
+
+/* Responsive table
+ ========================================================================== */
+/* Phone landscape and smaller */
+@media (max-width: 959px) {
+  .uk-table-responsive,
+  .uk-table-responsive tbody,
+  .uk-table-responsive th,
+  .uk-table-responsive td,
+  .uk-table-responsive tr {
+    display: block; }
+  .uk-table-responsive thead {
+    display: none; }
+  .uk-table-responsive th,
+  .uk-table-responsive td {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+    white-space: normal !important; }
+  .uk-table-responsive th:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:first-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:first-child) > a {
+    padding-top: 5px !important; }
+  .uk-table-responsive th:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive td:not(:last-child):not(.uk-table-link),
+  .uk-table-responsive .uk-table-link:not(:last-child) > a {
+    padding-bottom: 5px !important; }
+  .uk-table-justify.uk-table-responsive th,
+  .uk-table-justify.uk-table-responsive td {
+    padding-left: 0;
+    padding-right: 0; } }
+
+.uk-table tbody tr {
+  transition: background-color 0.1s linear; }
+
+/* ========================================================================
    Component: Form
  ========================================================================== */
 /*
@@ -2187,3 +2363,96 @@ a.main-nav__sub-menu-link {
     transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.home-sections {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-bottom: 160px; }
+
+.home-sections__item {
+  flex-grow: 1; }
+  .home-sections__item:nth-of-type(2) {
+    position: relative;
+    top: -70px; }
+
+.section-item {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 170px 50px 25px 50px; }
+  .section-item:hover {
+    text-decoration: none; }
+  .section-item_kuzov {
+    background-color: #afbecf; }
+    .section-item_kuzov .section-item__letter {
+      background-image: url("../img/bg-kuzov.jpg"); }
+  .section-item_slesar {
+    background-color: #cec4c8; }
+  .section-item_pokras {
+    background-color: #b5b7ba; }
+  .section-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #93012a;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%; }
+  .section-item:hover::before {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%; }
+  .section-item:hover .section-item__title::before {
+    -webkit-transform: translatey(-50%) scale(1);
+            transform: translatey(-50%) scale(1);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
+
+.section-item__letter {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  width: 210px;
+  height: 235px;
+  background: no-repeat 50% 50% / cover;
+  background-image: url("../img/bg-kuzov.jpg");
+  -webkit-clip-path: url("../img/K.svg");
+          clip-path: url("../img/K.svg");
+  font-size: 320px;
+  font-weight: 700;
+  line-height: 1; }
+
+.section-item__title {
+  position: relative;
+  color: #222;
+  font-size: 36px;
+  font-weight: 700; }
+  .section-item__title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -70px;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #222 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' %3E%3Cpath fill-rule='evenodd' fill='%23d5dce4' d='M31.926,8.637 C32.023,8.868 32.023,9.128 31.927,9.359 C31.879,9.472 31.811,9.573 31.726,9.658 C31.723,9.661 31.723,9.664 31.720,9.666 L23.559,17.722 C23.372,17.906 23.127,17.999 22.883,17.999 C22.638,17.999 22.393,17.906 22.206,17.722 C21.833,17.354 21.833,16.756 22.206,16.387 L28.735,9.943 L0.956,9.943 C0.428,9.943 -0.000,9.520 -0.000,8.998 C-0.000,8.478 0.428,8.055 0.956,8.055 L28.735,8.055 L22.206,1.610 C21.833,1.241 21.833,0.644 22.206,0.275 C22.580,-0.094 23.185,-0.094 23.559,0.275 L31.720,8.331 C31.733,8.343 31.737,8.360 31.749,8.373 C31.821,8.452 31.885,8.538 31.926,8.637 Z'/%3E%3C/svg%3E") no-repeat 50% 50%/34px 20px;
+    -webkit-transform: translatey(-50%) scale(0);
+            transform: translatey(-50%) scale(0);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }

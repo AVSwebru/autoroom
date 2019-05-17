@@ -23,7 +23,7 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/divider.scss";
 // @import "uikit/src/scss/components/list.scss";
 // @import "uikit/src/scss/components/description-list.scss";
-// @import "uikit/src/scss/components/table.scss";
+@import 'uikit/src/scss/components/table.scss';
 // @import "uikit/src/scss/components/icon.scss";
 // @import "uikit/src/scss/components/form-range.scss";
 @import 'uikit/src/scss/components/form.scss'; // After: Icon, Form Range

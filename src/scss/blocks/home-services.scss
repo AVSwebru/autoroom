@@ -26,9 +26,6 @@
     .home-services__link-img {
       display: block;
       &::before {
-        // transform: scaleY(0);
-        // transform-origin: 50% 0;
-        // transition: transform 0.5s 0.5s;
         animation: appearence 0.5s forwards;
       }
     }
