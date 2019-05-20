@@ -1,0 +1,35 @@
+.home-features {
+  padding: 145px 0 130px;
+  background: #860126 url('../img/bg-features.jpg') no-repeat 50% 50% / cover;
+}
+
+.home-features__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  margin: 0 -30px;
+}
+
+.home-features__item {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.home-features__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: rgba(68, 66, 70, 0.3);
+}
+
+.home-features__desc {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}

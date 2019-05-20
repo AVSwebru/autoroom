@@ -1,0 +1,42 @@
+.home-partners {
+  padding: 200px 0 190px;
+  background: url('../img/bg-keys.png') no-repeat 0 200px;
+}
+
+.home-partners__section-title {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.home-partners__slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-partners__slider-nav {
+  @include reset-link;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &_left {
+    left: 0;
+  }
+  &_right {
+    right: 0;
+  }
+  &:hover {
+    .home-partners__slider-arrow {
+      fill: #93012a;
+    }
+  }
+}
+
+.home-partners__slider-arrow {
+  width: 25px;
+  height: 18px;
+  fill: #818181;
+  &:hover {
+    fill: #93012a;
+  }
+}

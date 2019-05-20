@@ -1,0 +1,49 @@
+.home-works {
+  padding: 150px 0 145px;
+  background: url('../img/bg-works.png') no-repeat 0 50%;
+}
+
+.home-works__section-title {
+  margin-bottom: 50px;
+}
+
+.home-works__switcher {
+  display: flex;
+}
+
+.home-works__switcher-list {
+  @include reset-list;
+  margin-right: 15px;
+}
+
+.home-works__switcher-item {
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  &.uk-active {
+    .home-works__switcher-link {
+      background-color: #93012a;
+      color: #fff;
+    }
+    .home-works__switcher-text {
+      padding-left: 35px;
+    }
+  }
+}
+
+.home-works__switcher-link {
+  @include reset-link;
+  display: inline-block;
+  padding: 10px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  &:hover {
+    color: #93012a;
+  }
+}
+
+.home-works__comparsion-list {
+  @include reset-list;
+  flex-grow: 1;
+}

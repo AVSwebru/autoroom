@@ -32,7 +32,7 @@ $global-font-family: $font-base;
 // Layout
 // @import "uikit/src/scss/components/section.scss";
 @import 'uikit/src/scss/components/container.scss';
-// @import "uikit/src/scss/components/grid.scss";
+@import 'uikit/src/scss/components/grid.scss';
 // @import "uikit/src/scss/components/tile.scss";
 // @import "uikit/src/scss/components/card.scss";
 
@@ -67,10 +67,10 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/modal.scss"; // After: Close
 // @import "uikit/src/scss/components/lightbox.scss"; // After: Close
 // @import "uikit/src/scss/components/slideshow.scss";
-// @import "uikit/src/scss/components/slider.scss";
+@import 'uikit/src/scss/components/slider.scss';
 // @import "uikit/src/scss/components/sticky.scss";
 // @import "uikit/src/scss/components/offcanvas.scss";
-// @import "uikit/src/scss/components/switcher.scss";
+@import 'uikit/src/scss/components/switcher.scss';
 // @import "uikit/src/scss/components/heading.scss";
 // // Scrollspy
 // Toggle
@@ -87,7 +87,7 @@ $global-font-family: $font-base;
 
 // Utilities
 @import 'uikit/src/scss/components/animation.scss';
-// @import "uikit/src/scss/components/width.scss";
+@import 'uikit/src/scss/components/width.scss';
 // @import "uikit/src/scss/components/height.scss";
 // @import "uikit/src/scss/components/text.scss";
 // @import "uikit/src/scss/components/column.scss";
@@ -99,7 +99,7 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/flex.scss"; // After: Utility
 // @import "uikit/src/scss/components/margin.scss";
 // @import "uikit/src/scss/components/padding.scss";
-// @import "uikit/src/scss/components/position.scss";
+@import 'uikit/src/scss/components/position.scss';
 // @import "uikit/src/scss/components/transition.scss";
 // @import "uikit/src/scss/components/visibility.scss";
 // @import "uikit/src/scss/components/inverse.scss";
