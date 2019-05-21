@@ -1,6 +1,18 @@
 .home-services {
   padding: 150px 0 200px;
   background: #e8ecf0 url('../img/bg-services.png') no-repeat 100% 50% / auto;
+  @media (max-width: $breakpoint-large) {
+    background-size: 350px 300px;
+    background-position-y: 35%;
+  }
+  @media (max-width: $breakpoint-medium) {
+    background-size: 250px 200px;
+    background-position-y: 25%;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 50px 0 100px;
+    background: none;
+  }
 }
 
 .home-services__section-title {
@@ -62,4 +74,7 @@
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: clip-path 0.25s;
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
 }

@@ -3,6 +3,9 @@
   top: 45px;
   left: 0;
   width: 100%;
+  @media (max-width: $breakpoint-small) {
+    top: 20px;
+  }
 }
 
 .main-header__top {
@@ -10,6 +13,17 @@
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 50px;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.main-header__logo {
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+  }
 }
 
 .main-header__logo-img {
@@ -32,6 +46,9 @@
 
 .main-header__rightside {
   text-align: right;
+  @media (max-width: $breakpoint-small) {
+    text-align: center;
+  }
 }
 
 .main-header__social-link {
@@ -40,5 +57,15 @@
   font-weight: 500;
   &:hover {
     color: #a2868d;
+  }
+}
+
+.main-header__adapt-menu-area {
+  display: none;
+  @media (max-width: $breakpoint-medium) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }

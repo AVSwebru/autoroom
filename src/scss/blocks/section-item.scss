@@ -45,8 +45,13 @@
     }
     .section-item__letter {
       background-clip: border-box;
-      font-size: 0;
+      @media (max-width: $breakpoint-medium) {
+        -webkit-background-clip: text;
+      }
     }
+  }
+  @media (max-width: $breakpoint-medium) {
+    padding: 20px 20px 30px;
   }
 }
 
@@ -63,6 +68,12 @@
   font-size: 320px;
   font-weight: 700;
   line-height: 1;
+  @media (max-width: $breakpoint-medium) {
+    position: static;
+    top: 0;
+    left: 0;
+    display: block;
+  }
 }
 
 .section-item__title {
@@ -84,5 +95,16 @@
       no-repeat 50% 50% / 34px 20px;
     transform: translatey(-50%) scale(0);
     transition: transform 0.25s;
+    @media (max-width: $breakpoint-small) {
+      right: -50px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media (max-width: $breakpoint-medium) {
+    display: inline-block;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 22px;
   }
 }

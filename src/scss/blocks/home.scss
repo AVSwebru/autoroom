@@ -9,4 +9,11 @@
   font-size: 72px;
   font-weight: 700;
   line-height: 0.9;
+  @media (max-width: $breakpoint-large) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 110px;
+    font-size: 50px;
+  }
 }

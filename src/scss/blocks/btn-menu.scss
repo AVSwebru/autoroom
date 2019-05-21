@@ -1,0 +1,10 @@
+.btn-menu {
+  @include reset-btn;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  background: url('../img/menu.svg') no-repeat 50% 50% / 50px 50px;
+  &.active {
+    background: url('../img/close.svg') no-repeat 50% 50% / 30px 30px;
+  }
+}

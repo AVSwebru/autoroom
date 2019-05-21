@@ -1,6 +1,9 @@
 .home-sections {
   @include reset-list;
   display: flex;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
 }
 
 .home-sections__item {
@@ -8,5 +11,8 @@
   &:nth-of-type(2) {
     position: relative;
     top: -70px;
+    @media (max-width: $breakpoint-medium) {
+      position: static;
+    }
   }
 }

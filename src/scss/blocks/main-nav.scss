@@ -1,10 +1,32 @@
 .main-nav {
+  &.active {
+    display: block;
+  }
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    z-index: 1;
+    width: calc(100vw + 30px);
+    background-color: #000;
+  }
+  @media (max-width: $breakpoint-small) {
+    left: -15px;
+    width: calc(100vw + 15px);
+  }
 }
 
 .main-nav__list {
   @include reset-list;
   display: flex;
   width: 100%;
+  box-sizing: border-box;
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 }
 
 .main-nav__item {
@@ -15,6 +37,10 @@
   &:hover {
     border-bottom-color: #93012a;
     transition: border-bottom-color 0.25s;
+  }
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 10px;
+    border-bottom: 0;
   }
 }
 

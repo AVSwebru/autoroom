@@ -23,8 +23,21 @@
       transition: transform 0.25s;
     }
   }
+  @media (max-width: $breakpoint-medium) {
+    width: 155px;
+    height: 155px;
+    box-shadow: 0 0 0 3px #fff, 0px 0px 0 5px #d5dce4;
+    font-size: 16px;
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 0 #fff, 0 0 0 5px #93012a;
+    }
+  }
 }
 
 .btn-action__arrow {
   transition: transform 0.25s;
+  @media (max-width: $breakpoint-medium) {
+    display: none;
+  }
 }
