@@ -13,7 +13,9 @@
 
 .home-works__switcher-list {
   @include reset-list;
-  margin-right: 15px;
+  position: relative;
+  z-index: 2;
+  margin: 15px 15px 0 0;
 }
 
 .home-works__switcher-item {
@@ -22,11 +24,11 @@
   }
   &.uk-active {
     .home-works__switcher-link {
-      background-color: #93012a;
-      color: #fff;
-    }
-    .home-works__switcher-text {
+      width: calc(100% + 40px);
       padding-left: 35px;
+      background-size: 100% 100%;
+      color: #fff;
+      transition: padding-left 0.25s, color 0.25s, background-size 0.25s;
     }
   }
 }
@@ -35,9 +37,12 @@
   @include reset-link;
   display: inline-block;
   padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #93012a, #93012a) no-repeat 0 0 / 0 100%;
   color: #222;
   font-size: 24px;
   font-weight: 700;
+  transition: padding-left 0.25s, color 0.25s, background-size 0.25s;
   &:hover {
     color: #93012a;
   }
@@ -45,5 +50,7 @@
 
 .home-works__comparsion-list {
   @include reset-list;
+  position: relative;
+  z-index: 1;
   flex-grow: 1;
 }

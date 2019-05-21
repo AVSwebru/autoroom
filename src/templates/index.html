@@ -78,10 +78,14 @@
                   <div class="form-callback__attachment">
                     Есть фото? Отлично,
                     <div data-uk-form-custom>
-                      <input type="file">
+                      <input class="form-callback__attachment-input" type="file">
                       <span class="form-callback__btn-attachment">
                         <span class="form-callback__btn-attachment-text">прикрепите</span>
-                        <img src="../img/icon-clip.svg" alt="">
+                        <svg class="form-callback__btn-attachment-icon" viewBox="0 0 18 20.969">
+                          <path
+                            d="M692.29,733.364a0.775,0.775,0,0,0,0-1.048,0.677,0.677,0,0,0-.992,0l-3.71,3.921a3.63,3.63,0,0,0,0,4.951,3.18,3.18,0,0,0,4.684,0l8.377-8.852a5.087,5.087,0,0,0,0-6.9,4.449,4.449,0,0,0-6.547,0l-8.36,8.835a6.535,6.535,0,0,0,0,8.889,5.722,5.722,0,0,0,8.411,0l3.709-3.921a0.771,0.771,0,0,0,0-1.048,0.676,0.676,0,0,0-.992,0l-3.709,3.92a4.367,4.367,0,0,1-6.427,0,4.99,4.99,0,0,1,0-6.792l8.359-8.835a3.1,3.1,0,0,1,2.273-.993,3.133,3.133,0,0,1,2.274.993,3.465,3.465,0,0,1,.941,2.4,3.5,3.5,0,0,1-.941,2.4l-8.376,8.852a1.856,1.856,0,0,1-2.7,0,2.087,2.087,0,0,1,0-2.854Zm0,0"
+                            transform="translate(-684 -724.031)" />
+                        </svg>
                       </span>
                     </div>
                   </div>
@@ -106,7 +110,7 @@
               <div class="form-callback__submit-area">
                 <button class="form-callback__submit btn-action" type="submit">
                   Отправить&nbsp;
-                  <img width="35" height="20" src="../img/arrow-right.svg" alt="">
+                  <img class="btn-action__arrow" width="35" height="20" src="../img/arrow-right.svg" alt="">
                 </button>
               </div>
             </form>
@@ -378,40 +382,42 @@
             <ul class="home-works__switcher-list" data-uk-switcher>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Ремонт ходовой</span>
+                  Ремонт ходовой
                 </a>
               </li>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Ремонт КПП</a></span>
-              </li>
-              <li class="home-works__switcher-item">
-                <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Техобслуживание</span>
+                  Ремонт КПП
                 </a>
               </li>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Замена масла в моторе</span>
+                  Техобслуживание
                 </a>
               </li>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Замена масла в коробке</span>
+                  Замена масла в моторе
                 </a>
               </li>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Ремонт электрики</span></a>
-              </li>
-              <li class="home-works__switcher-item">
-                <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Компьютерная диагностика</span>
+                  Замена масла в коробке
                 </a>
               </li>
               <li class="home-works__switcher-item">
                 <a class="home-works__switcher-link" href="#">
-                  <span class="home-works__switcher-text">Ремонт генераторов и стартеров</span>
+                  Ремонт электрики
+                </a>
+              </li>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Компьютерная диагностика
+                </a>
+              </li>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Ремонт генераторов и стартеров
                 </a>
               </li>
             </ul>
@@ -504,7 +510,7 @@
             <div class="main-footer__info">
               c 10:00 до 22:00
             </div>
-            <a class="btn-action" href="#" data-uk-scroll>
+            <a class="main-footer__btn-action btn-action" href="#" data-uk-scroll>
               Записаться
             </a>
           </div>

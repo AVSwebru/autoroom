@@ -1,7 +1,7 @@
 .comparsion {
   position: relative;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 60%;
 }
 
 .comparsion__left {
@@ -33,16 +33,25 @@
   z-index: 3;
   width: 3px;
   height: 100%;
-  background-color: #fff;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #6f2eab;
-    transform: translate(-50%, -50%);
-  }
+  background-color: #000;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 50%;
+  //   left: -15px;
+  //   width: 10px;
+  //   height: 20px;
+  //   background-color: #6d0420;
+  //   clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  // }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 50%;
+  //   right: -15px;
+  //   width: 10px;
+  //   height: 20px;
+  //   background-color: #6d0420;
+  //   clip-path: polygon(0 0, 100% 50%, 0 100%);
+  // }
 }
