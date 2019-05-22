@@ -1,0 +1,45 @@
+.inner-page__breadcrumb {
+  margin-bottom: 50px;
+}
+
+.inner-page__grid {
+  display: flex;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
+}
+
+.inner-page__nav {
+  margin-right: 60px;
+  @media (max-width: $breakpoint-medium) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.inner-page__title {
+  color: #222;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.inner-page__banner {
+  margin-bottom: 55px;
+}
+
+.inner-page__section {
+  margin-bottom: 60px;
+  line-height: 1.4;
+}
+
+.inner-page__section-title {
+  margin-bottom: 30px;
+  color: #57677a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.inner-page__table {
+  margin-bottom: 70px;
+}

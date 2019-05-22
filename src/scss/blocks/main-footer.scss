@@ -84,7 +84,8 @@
   top: -200px;
   right: 0;
   @media (max-width: $breakpoint-medium) {
-    top: -100px;
+    top: 0;
+    transform: translateY(-50%);
   }
   @media (max-width: $breakpoint-small) {
     position: static;

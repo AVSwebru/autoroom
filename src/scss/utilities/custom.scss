@@ -1,7 +1,18 @@
 // 1. Your custom variables and variable overwrites.
 @import 'variables';
 
+//base
 $global-font-family: $font-base;
+$global-color: #222;
+$global-link-color: #b6103d;
+$base-heading-font-weight: 700;
+
+//breadcrumb
+$breadcrumb-divider: '→';
+$breadcrumb-item-hover-text-decoration: underline;
+$breadcrumb-divider-margin-horizontal: 10px;
+$breadcrumb-item-color: #787878;
+$breadcrumb-item-active-color: #222;
 
 // 2. Import default variables and available mixins.
 @import 'uikit/src/scss/variables-theme.scss';
@@ -9,6 +20,9 @@ $global-font-family: $font-base;
 
 // 3. Your custom mixin overwrites.
 
+@mixin hook-table-header-cell() {
+  text-transform: none;
+}
 // 4. Import UIkit.
 // @import "uikit/src/scss/uikit-theme.scss";
 
@@ -53,7 +67,7 @@ $global-font-family: $font-base;
 // @import "uikit/src/scss/components/nav.scss";
 // @import "uikit/src/scss/components/navbar.scss"; // After: Card, Grid, Nav, Icon, Search
 // @import "uikit/src/scss/components/subnav.scss";
-// @import "uikit/src/scss/components/breadcrumb.scss";
+@import 'uikit/src/scss/components/breadcrumb.scss';
 // @import "uikit/src/scss/components/pagination.scss";
 // @import "uikit/src/scss/components/tab.scss";
 // @import "uikit/src/scss/components/slidenav.scss"; // After: Icon

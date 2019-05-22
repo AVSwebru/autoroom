@@ -1,10 +1,17 @@
 .main-header {
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 100%;
-  @media (max-width: $breakpoint-small) {
-    top: 20px;
+  &_home-page {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    @media (max-width: $breakpoint-small) {
+      top: 20px;
+    }
+  }
+  &_inner-page {
+    padding-top: 30px;
+    margin-bottom: 50px;
+    background: url('../img/bg-innerpage-header.jpg') no-repeat 50% 50% / cover;
   }
 }
 

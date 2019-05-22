@@ -1,6 +1,10 @@
-.main-nav {
+.nav-main {
   &.active {
     display: block;
+  }
+  &_inner-page {
+    position: relative;
+    top: 3px;
   }
   @media (max-width: $breakpoint-medium) {
     display: none;
@@ -17,7 +21,7 @@
   }
 }
 
-.main-nav__list {
+.nav-main__list {
   @include reset-list;
   display: flex;
   width: 100%;
@@ -29,7 +33,7 @@
   }
 }
 
-.main-nav__item {
+.nav-main__item {
   flex-grow: 1;
   border-bottom: 3px solid #fff;
   position: relative;
@@ -44,7 +48,7 @@
   }
 }
 
-.main-nav__link {
+.nav-main__link {
   @include reset-link;
   display: block;
   padding: 5px;
@@ -58,7 +62,7 @@
   }
 }
 
-.main-nav__btn-drop {
+.nav-main__btn-drop {
   @include reset-btn;
   width: 100%;
   padding: 5px;
@@ -66,14 +70,14 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  &.uk-open .main-nav__btn-drop-text {
+  &.uk-open .nav-main__btn-drop-text {
     &::after {
       transform: rotate(0);
     }
   }
 }
 
-.main-nav__btn-drop-text {
+.nav-main__btn-drop-text {
   padding-right: 10px;
   position: relative;
   &::after {
@@ -88,22 +92,22 @@
   }
 }
 
-.main-nav__sub-menu {
+.nav-main__sub-menu {
   width: 100%;
   padding: 0;
   top: calc(100% - 7px) !important;
 }
 
-.main-nav__sub-menu-list {
+.nav-main__sub-menu-list {
   @include reset-list;
   padding: 10px;
 }
 
-.main-nav__sub-menu-item {
+.nav-main__sub-menu-item {
   margin-bottom: 10px;
 }
 
-a.main-nav__sub-menu-link {
+a.nav-main__sub-menu-link {
   color: #554449 !important;
   font-size: 18px;
   font-weight: 500;
