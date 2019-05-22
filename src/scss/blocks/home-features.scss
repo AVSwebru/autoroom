@@ -1,6 +1,9 @@
 .home-features {
   padding: 145px 0 130px;
   background: #860126 url('../img/bg-features.jpg') no-repeat 50% 50% / cover;
+  @media (max-width: $breakpoint-medium) {
+    padding: 50px 0 50px;
+  }
 }
 
 .home-features__list {
@@ -8,12 +11,26 @@
   display: flex;
   justify-content: center;
   margin: 0 -30px;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .home-features__item {
   display: flex;
   align-items: center;
   margin: 0 30px;
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: $breakpoint-small) {
+    &:not(:last-of-type) {
+      margin: 0 0 40px;
+    }
+  }
 }
 
 .home-features__icon-wrapper {
@@ -25,11 +42,23 @@
   height: 86px;
   border-radius: 50%;
   margin-right: 15px;
-  background-color: rgba(68, 66, 70, 0.3);
+  background-color: rgba(213, 220, 228, 0.3);
+  @media (max-width: $breakpoint-medium) {
+    min-width: 70px;
+    width: 70px;
+    height: 70px;
+    margin: 0 0 5px;
+  }
 }
 
 .home-features__desc {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
+  @media (max-width: $breakpoint-large) {
+    font-size: 20px;
+  }
+  @media (max-width: $breakpoint-medium) {
+    text-align: center;
+  }
 }

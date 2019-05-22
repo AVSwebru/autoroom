@@ -1,11 +1,21 @@
 .home-partners {
   padding: 200px 0 190px;
   background: url('../img/bg-keys.png') no-repeat 0 200px;
+  @media (max-width: $breakpoint-medium) {
+    background-size: 150px 120px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 50px 0;
+    background: none;
+  }
 }
 
 .home-partners__section-title {
   margin-bottom: 100px;
   text-align: center;
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 34px;
+  }
 }
 
 .home-partners__slider-item {

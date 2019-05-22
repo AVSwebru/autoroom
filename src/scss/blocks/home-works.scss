@@ -1,6 +1,15 @@
 .home-works {
   padding: 150px 0 145px;
   background: url('../img/bg-works.png') no-repeat 0 50%;
+  @media (max-width: $breakpoint-xlarge) {
+    background: none;
+  }
+  @media (max-width: $breakpoint-medium) {
+    padding: 100px 0 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    padding: 50px 0;
+  }
 }
 
 .home-works__section-title {
@@ -9,18 +18,34 @@
 
 .home-works__switcher {
   display: flex;
+  @media (max-width: $breakpoint-large) {
+    display: block;
+  }
 }
 
 .home-works__switcher-list {
   @include reset-list;
   position: relative;
   z-index: 2;
+  width: 360px;
   margin: 15px 15px 0 0;
+  @media (max-width: $breakpoint-large) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 25px;
+  }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
 }
 
 .home-works__switcher-item {
   &:not(:last-of-type) {
     margin-bottom: 15px;
+    @media (max-width: $breakpoint-large) {
+      margin-bottom: 0;
+    }
   }
   &.uk-active {
     .home-works__switcher-link {
@@ -29,6 +54,10 @@
       background-size: 100% 100%;
       color: #fff;
       transition: padding-left 0.25s, color 0.25s, background-size 0.25s;
+      @media (max-width: $breakpoint-large) {
+        padding-left: 10px;
+        width: auto;
+      }
     }
   }
 }
@@ -45,6 +74,9 @@
   transition: padding-left 0.25s, color 0.25s, background-size 0.25s;
   &:hover {
     color: #93012a;
+  }
+  @media (max-width: $breakpoint-xlarge) {
+    font-size: 20px;
   }
 }
 

@@ -1,13 +1,24 @@
+.main-footer {
+  position: relative;
+  z-index: 2;
+}
+
 .main-footer__top-inner {
   position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
   padding: 65px 0;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
 }
 
 .main-footer__tel {
   @include reset-link;
-  margin-right: 9%;
+  margin-right: 110px;
   color: #120005;
   font-size: 24px;
   font-weight: 500;
@@ -15,22 +26,69 @@
   &:hover {
     color: #93012a;
   }
+  @media (max-width: $breakpoint-large) {
+    margin-right: 50px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .main-footer__info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  @media (max-width: $breakpoint-medium) {
+    flex-direction: column;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.main-footer__info-item {
   color: #222;
   font-size: 18px;
   font-weight: 500;
   line-height: 1;
   &:not(:last-of-type) {
-    margin-right: 9%;
+    margin-right: 100px;
+  }
+  @media (max-width: $breakpoint-large) {
+    &:not(:last-of-type) {
+      margin-right: 50px;
+    }
+  }
+  @media (max-width: $breakpoint-medium) {
+    &:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 
-.main-footer__btn-action {
+.main-footer__assign-area {
+  position: relative;
+  width: 200px;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.main-footer__assign {
   position: absolute;
-  top: -100px;
+  top: -200px;
   right: 0;
+  @media (max-width: $breakpoint-medium) {
+    top: -100px;
+  }
+  @media (max-width: $breakpoint-small) {
+    position: static;
+  }
 }
 
 .main-footer__bottom {
@@ -41,10 +99,16 @@
 .main-footer__bottom-inner {
   display: flex;
   justify-content: space-between;
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
+  }
 }
 
 .main-footer__law-links {
   @include reset-list;
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+  }
 }
 
 .main-footer__law-item {
