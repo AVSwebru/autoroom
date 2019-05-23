@@ -1,4 +1,4 @@
-<svg fill="#0c243c" viewBox="0 0 936 316">
+<svg xmlns="http://www.w3.org/2000/svg" fill="#818181" viewBox="0 0 936 316">
   <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
         C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
         l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
@@ -11,7 +11,7 @@
         c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z" />
   <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z" />
   <text style="font-family: 'Open Sans', sans-serif;
-      font-size: 110px; fill: #0c243c;" x="400" y="130">Сделано в</text>
+      font-size: 110px; fill: #818181;" x="400" y="130">Сделано в</text>
   <text style="font-family: 'Open Sans', sans-serif;
-      font-size: 110px; letter-spacing: 3px; fill: #0c243c;" x="400" y="270" textLength="550">#avsweb</text>
+      font-size: 110px; letter-spacing: 3px; fill: #818181;" x="400" y="270" textLength="550">#avsweb</text>
 </svg>

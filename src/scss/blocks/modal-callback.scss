@@ -1,0 +1,27 @@
+.modal-callback__body {
+  padding: 60px;
+  background: #141c19 url('../img/bg-intro.jpg') no-repeat 50% 50% / cover;
+  @media (max-width: $breakpoint-small) {
+    padding: 80px 30px;
+  }
+}
+
+.modal-callback__title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  @media (max-width: $breakpoint-small) {
+    font-size: 32px;
+  }
+}
+
+.modal-callback__close {
+  @include reset-btn;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background: url('../img/close.svg') no-repeat 50% 50% / 30px 30px;
+}

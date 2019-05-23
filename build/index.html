@@ -11,7 +11,7 @@
 
 <body class="page">
   <div class="page-wrapper">
-    <header class="main-header">
+    <header class="main-header main-header_home-page">
       <div class="uk-container">
         <div class="main-header__top">
           <a class="main-header__logo" aria-label="AUTO ROOM - Ремонт и обслуживание авто">
@@ -25,32 +25,65 @@
             </div>
           </div>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О нас</a>
+        <div class="main-header__adapt-menu-area">
+          <div class="adapt-services">
+            <button class="adapt-services__btn-drop" type="button">
+              <span class="adapt-services__btn-drop-text">Услуги по авторемонту</span>
+            </button>
+            <div class="adapt-services__sub-menu" data-uk-dropdown="mode: click">
+              <ul class="adapt-services__sub-menu-list uk-dropdown-nav">
+                <li class="adapt-services__sub-menu-item">
+                  <a class="adapt-services__sub-menu-link" href="#">Покрасочные работы</a>
+                </li>
+                <li class="adapt-services__sub-menu-item">
+                  <a class="adapt-services__sub-menu-link" href="#">Наши работы</a>
+                </li>
+                <li class="adapt-services__sub-menu-item">
+                  <a class="adapt-services__sub-menu-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn-menu js-btn-menu" type="submit"
+            data-uk-toggle="target: .js-nav-main, .js-btn-menu; cls: active">
+          </button>
+          <nav class="nav-main js-nav-main">
+            <ul class="nav-main__list">
+              <li class="nav-main__item">
+                <a class="nav-main__link" href="#">О нас</a>
+              </li>
+              <li class="nav-main__item"><a class="nav-main__link" href="#">Покрасочные работы</a></li>
+              <li class="nav-main__item"><a class="nav-main__link" href="#">Наши работы</a></li>
+              <li class="nav-main__item"><a class="nav-main__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="nav-main">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">О нас</a>
             </li>
-            <li class="main-nav__item">
-              <button class="main-nav__btn-drop" type="button">
-                <span class="main-nav__btn-drop-text">Услуги по авторемонту</span>
+            <li class="nav-main__item">
+              <button class="nav-main__btn-drop" type="button">
+                <span class="nav-main__btn-drop-text">Услуги по авторемонту</span>
               </button>
-              <div class="main-nav__sub-menu" data-uk-dropdown="mode: click">
-                <ul class="main-nav__sub-menu-list uk-dropdown-nav">
-                  <li class="main-nav__sub-menu-item">
-                    <a class="main-nav__sub-menu-link" href="#">Покрасочные работы</a>
+              <div class="nav-main__sub-menu" data-uk-dropdown="mode: click">
+                <ul class="nav-main__sub-menu-list uk-dropdown-nav">
+                  <li class="nav-main__sub-menu-item">
+                    <a class="nav-main__sub-menu-link" href="#">Покрасочные работы</a>
                   </li>
-                  <li class="main-nav__sub-menu-item">
-                    <a class="main-nav__sub-menu-link" href="#">Наши работы</a>
+                  <li class="nav-main__sub-menu-item">
+                    <a class="nav-main__sub-menu-link" href="#">Наши работы</a>
                   </li>
-                  <li class="main-nav__sub-menu-item">
-                    <a class="main-nav__sub-menu-link" href="#">Контакты</a>
+                  <li class="nav-main__sub-menu-item">
+                    <a class="nav-main__sub-menu-link" href="#">Контакты</a>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Покрасочные работы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Наши работы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="#">Покрасочные работы</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="#">Наши работы</a></li>
+            <li class="nav-main__item"><a class="nav-main__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -61,12 +94,11 @@
           <h1 class="home__title">
             Автосервис для любых видов авто и техники
           </h1>
-          <section class="home-callback">
+          <section class="home-callback" id="home-callback">
             <h2 class="home-callback__section-title section-title section-title_light">
               Что хотите починить?
             </h2>
-
-            <form class="form-callback">
+            <form class="home-callback__form-callback form-callback form-callback_intro">
               <div class="form-callback__fields-area">
                 <div>
                   <label class="form-callback__label">
@@ -78,10 +110,14 @@
                   <div class="form-callback__attachment">
                     Есть фото? Отлично,
                     <div data-uk-form-custom>
-                      <input type="file">
+                      <input class="form-callback__attachment-input" type="file" aria-label="Приложение фото">
                       <span class="form-callback__btn-attachment">
                         <span class="form-callback__btn-attachment-text">прикрепите</span>
-                        <img src="img/icon-clip.svg?9ac308b9aba52959f5e81c9cfd0dfd0f" alt="">
+                        <svg class="form-callback__btn-attachment-icon" viewBox="0 0 18 20.969">
+                          <path
+                            d="M692.29,733.364a0.775,0.775,0,0,0,0-1.048,0.677,0.677,0,0,0-.992,0l-3.71,3.921a3.63,3.63,0,0,0,0,4.951,3.18,3.18,0,0,0,4.684,0l8.377-8.852a5.087,5.087,0,0,0,0-6.9,4.449,4.449,0,0,0-6.547,0l-8.36,8.835a6.535,6.535,0,0,0,0,8.889,5.722,5.722,0,0,0,8.411,0l3.709-3.921a0.771,0.771,0,0,0,0-1.048,0.676,0.676,0,0,0-.992,0l-3.709,3.92a4.367,4.367,0,0,1-6.427,0,4.99,4.99,0,0,1,0-6.792l8.359-8.835a3.1,3.1,0,0,1,2.273-.993,3.133,3.133,0,0,1,2.274.993,3.465,3.465,0,0,1,.941,2.4,3.5,3.5,0,0,1-.941,2.4l-8.376,8.852a1.856,1.856,0,0,1-2.7,0,2.087,2.087,0,0,1,0-2.854Zm0,0"
+                            transform="translate(-684 -724.031)" />
+                        </svg>
                       </span>
                     </div>
                   </div>
@@ -104,9 +140,9 @@
                 </div>
               </div>
               <div class="form-callback__submit-area">
-                <button class="form-callback__submit btn-action" type="submit">
+                <button class="form-callback__submit btn-action btn-action_home-page" type="submit">
                   Отправить&nbsp;
-                  <img width="35" height="20" src="img/arrow-right.svg?e6319f71ba1657575d22d50fb4c87e79" alt="">
+                  <img class="btn-action__arrow" width="35" height="20" src="img/arrow-right.svg?e6319f71ba1657575d22d50fb4c87e79" alt="">
                 </button>
               </div>
             </form>
@@ -250,12 +286,11 @@
           </ul>
         </div>
       </section>
-
       <ul class="home-sections">
         <li class="home-sections__item">
           <a class="section-item section-item_kuzov" href="#">
             <span class="section-item__letter">
-              <!-- К -->
+              К
             </span>
             <span class="section-item__title">
               Кузовные работы
@@ -283,38 +318,59 @@
           </a>
         </li>
       </ul>
-      <section class="home-partners">
+      <section class="home-partners" data-uk-parallax="bgy: -500">
         <div class="uk-container">
           <h2 class="home-partners__section-title section-title section-title_dark">
-            Марки с которыми мы работаем
+            Марки, с которыми мы работаем
           </h2>
-          <div class="home-partners__slider uk-position-relative uk-visible-toggle" tabindex="-1" data-uk-slider>
-            <ul class="home-partners__slider-items uk-slider-items uk-child-width-1-3 uk-child-width-1-8@m uk-grid">
-              <li class="home-partners__slider-item">
-                <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-3.jpg?16a8376c80e15f0b42909dfd365c4fd7" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-3.jpg?16a8376c80e15f0b42909dfd365c4fd7" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
-              </li>
-              <li class="home-partners__slider-item">
-                <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
-              </li>
-            </ul>
+          <div class="home-partners__slider uk-visible-toggle" tabindex="-1" data-uk-slider="autoplay: true">
+            <div class="uk-position-relative">
+              <div class="uk-slider-container">
+                <ul
+                  class="home-partners__slider-items uk-slider-items uk-child-width-1-1 uk-child-width-1-4@s uk-child-width-1-6@m uk-grid uk-grid-small">
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-3.jpg?16a8376c80e15f0b42909dfd365c4fd7" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-3.jpg?16a8376c80e15f0b42909dfd365c4fd7" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-1.jpg?25c3eb5c9d47daf8968b5c00a4bfb7b5" alt="">
+                  </li>
+                  <li class="home-partners__slider-item">
+                    <img src="img/partners-2.jpg?8280818dbb771b846bcc79988e7a0299" alt="">
+                  </li>
+                </ul>
+              </div>
+              <a class="home-partners__slider-nav home-partners__slider-nav_left" href="#"
+                data-uk-slider-item="previous" aria-label="Следующие слайды">
+                <svg class="home-partners__slider-arrow width=" viewBox="0 0 24.937 17.81">
+                  <path data-name="Фигура 6"
+                    d="M8.131.25a.865.865 0 0 1 1.256 0 .918.918 0 0 1 0 1.27L3.016 7.99h21.023a.894.894 0 0 1 .893.89.9.9 0 0 1-.893.91H3.017l6.371 6.46a.931.931 0 0 1 0 1.28.882.882 0 0 1-1.256 0L.253 9.52a.9.9 0 0 1 0-1.26zm0 0"
+                    fill-rule="evenodd" />
+                </svg>
+              </a>
+              <a class="home-partners__slider-nav home-partners__slider-nav_right" href="#" data-uk-slider-item="next"
+                aria-label="Предыдущие слайды">
+                <svg class="home-partners__slider-arrow width=" viewBox="0 0 24.97 17.81">
+                  <path data-name="Фигура 6"
+                    d="M16.81.25a.87.87 0 0 0-1.26 0 .918.918 0 0 0 0 1.27l6.37 6.47H.9a.892.892 0 0 0-.89.89.9.9 0 0 0 .89.91h21.02l-6.37 6.46a.931.931 0 0 0 0 1.28.887.887 0 0 0 1.26 0l7.88-8.01a.906.906 0 0 0 0-1.26zm0 0"
+                    fill-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -351,111 +407,127 @@
           </ul>
         </div>
       </section>
-      <section class="home-works">
+      <section class="home-works" data-uk-parallax="bgy: -500">
         <div class="uk-container">
           <h2 class="home-works__section-title section-title section-title_dark">
             Наши работы
           </h2>
-          <div class="works-switcher">
-            <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Ремонт ходовой</a>
+          <div class="home-works__switcher">
+            <ul class="home-works__switcher-list" data-uk-switcher>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Ремонт ходовой
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Ремонт КПП</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Ремонт КПП
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Техобслуживание</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Техобслуживание
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Замена масла в моторе</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Замена масла в моторе
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Замена масла в коробке </a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Замена масла в коробке
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Ремонт электрики</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Ремонт электрики
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Компьютерная диагностика</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Компьютерная диагностика
+                </a>
               </li>
-              <li class="works-switcher__item">
-                <a class="works-switcher__link" href="#">Ремонт генераторов и стартеров</a>
+              <li class="home-works__switcher-item">
+                <a class="home-works__switcher-link" href="#">
+                  Ремонт генераторов и стартеров
+                </a>
               </li>
             </ul>
-            <ul class="uk-switcher uk-margin">
+            <ul class="home-works__comparsion-list uk-switcher">
               <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
+              </li>
               <li>
-              <li>
-                <div class="works-switcher__comparsion comparsion js-comparsion">
+                <div class="home-works__switcher-comparsion comparsion js-comparsion">
                   <div class="comparsion__left js-comparsion-left" style="background-image: url('img/test2.jpg')">
                   </div>
                   <div class="comparsion__right" style="background-image: url('img/test1.jpg')">
                   </div>
                   <div class="comparsion__handler js-comparsion-handler"></div>
                 </div>
-              <li>
+              </li>
             </ul>
           </div>
         </div>
@@ -467,14 +539,18 @@
           <div class="main-footer__top-inner">
             <a class="main-footer__tel" href="tel:+79264775335">+7 926 477 53 35</a>
             <div class="main-footer__info">
-              Пушкинская, 48
+              <div class="main-footer__info-item">
+                Пушкинская, 48
+              </div>
+              <div class="main-footer__info-item">
+                c 10:00 до 22:00
+              </div>
             </div>
-            <div class="main-footer__info">
-              c 10:00 до 22:00
+            <div class="main-footer__assign-area">
+              <a class="main-footer__assign btn-action btn-action_home-page" href="#home-callback" data-uk-scroll>
+                Записаться
+              </a>
             </div>
-            <a class="btn-action" href="#" data-uk-scroll>
-              Записаться
-            </a>
           </div>
         </div>
       </div>
@@ -490,7 +566,7 @@
               </li>
             </ul>
             <a class="main-footer__devs-link" aria-label="Разработано в веб-студии AVSWEB">
-              <img class="main-footer__devs-img" src="img/devs.svg?3428d9e07e0ef57930b21b543b30f955">
+              <img class="main-footer__devs-img" src="img/devs.svg?39afc14a603071bca9df12c85cc0c425" alt="Разработано веб-студией AVS Web">
             </a>
           </div>
         </div>

@@ -11,18 +11,32 @@
   @include reset-list;
   @media (max-width: $breakpoint-medium) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: $breakpoint-small) {
+    flex-direction: column;
   }
 }
 
 .nav-services__item {
   &:first-of-type {
     border-top: 3px solid #d5dce4;
+    @media (max-width: $breakpoint-medium) {
+      border-top: none;
+    }
   }
   &.active {
     .nav-services__link {
       color: #b6103d;
       border-bottom-color: #b6103d;
     }
+  }
+  @media (max-width: $breakpoint-medium) {
+    margin-right: 20px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 .nav-services__link {

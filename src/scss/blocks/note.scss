@@ -6,10 +6,21 @@
     content: '';
     position: absolute;
     bottom: -30px;
-    right: 4%;
+    right: 11%;
     width: 260px;
     height: 170px;
-    background: url('../img/bg-note.png') no-repeat 50% 50% / auto;
+    background: url('../img/bg-note.png') no-repeat 50% 50% / contain;
+  }
+  @media (max-width: $breakpoint-medium) {
+    &::before {
+      width: 200px;
+      height: 140px;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -20,4 +31,10 @@
   color: #222;
   font-size: 30px;
   font-weight: 700;
+  @media (max-width: $breakpoint-large) {
+    font-size: 20px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
 }

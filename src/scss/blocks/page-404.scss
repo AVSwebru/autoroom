@@ -1,0 +1,30 @@
+.page-404 {
+  background: url('../img/bg-404.jpg') no-repeat 50% 50% / cover;
+}
+
+.page-404__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-404__number {
+  margin-bottom: 100px;
+}
+
+.page-404__desc {
+  text-align: center;
+  color: #dedfde;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  a {
+    color: #b0d9fb;
+    text-decoration: underline;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 28px;
+  }
+}

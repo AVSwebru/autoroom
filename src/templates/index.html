@@ -94,11 +94,11 @@
           <h1 class="home__title">
             Автосервис для любых видов авто и техники
           </h1>
-          <section class="home-callback">
+          <section class="home-callback" id="home-callback">
             <h2 class="home-callback__section-title section-title section-title_light">
               Что хотите починить?
             </h2>
-            <form class="form-callback">
+            <form class="home-callback__form-callback form-callback form-callback_intro">
               <div class="form-callback__fields-area">
                 <div>
                   <label class="form-callback__label">
@@ -110,7 +110,7 @@
                   <div class="form-callback__attachment">
                     Есть фото? Отлично,
                     <div data-uk-form-custom>
-                      <input class="form-callback__attachment-input" type="file">
+                      <input class="form-callback__attachment-input" type="file" aria-label="Приложение фото">
                       <span class="form-callback__btn-attachment">
                         <span class="form-callback__btn-attachment-text">прикрепите</span>
                         <svg class="form-callback__btn-attachment-icon" viewBox="0 0 18 20.969">
@@ -355,14 +355,15 @@
                 </ul>
               </div>
               <a class="home-partners__slider-nav home-partners__slider-nav_left" href="#"
-                data-uk-slider-item="previous">
+                data-uk-slider-item="previous" aria-label="Следующие слайды">
                 <svg class="home-partners__slider-arrow width=" viewBox="0 0 24.937 17.81">
                   <path data-name="Фигура 6"
                     d="M8.131.25a.865.865 0 0 1 1.256 0 .918.918 0 0 1 0 1.27L3.016 7.99h21.023a.894.894 0 0 1 .893.89.9.9 0 0 1-.893.91H3.017l6.371 6.46a.931.931 0 0 1 0 1.28.882.882 0 0 1-1.256 0L.253 9.52a.9.9 0 0 1 0-1.26zm0 0"
                     fill-rule="evenodd" />
                 </svg>
               </a>
-              <a class="home-partners__slider-nav home-partners__slider-nav_right" href="#" data-uk-slider-item="next">
+              <a class="home-partners__slider-nav home-partners__slider-nav_right" href="#" data-uk-slider-item="next"
+                aria-label="Предыдущие слайды">
                 <svg class="home-partners__slider-arrow width=" viewBox="0 0 24.97 17.81">
                   <path data-name="Фигура 6"
                     d="M16.81.25a.87.87 0 0 0-1.26 0 .918.918 0 0 0 0 1.27l6.37 6.47H.9a.892.892 0 0 0-.89.89.9.9 0 0 0 .89.91h21.02l-6.37 6.46a.931.931 0 0 0 0 1.28.887.887 0 0 0 1.26 0l7.88-8.01a.906.906 0 0 0 0-1.26zm0 0"
@@ -546,7 +547,7 @@
               </div>
             </div>
             <div class="main-footer__assign-area">
-              <a class="main-footer__assign btn-action btn-action_home-page" href="#" data-uk-scroll>
+              <a class="main-footer__assign btn-action btn-action_home-page" href="#home-callback" data-uk-scroll>
                 Записаться
               </a>
             </div>
@@ -565,7 +566,7 @@
               </li>
             </ul>
             <a class="main-footer__devs-link" aria-label="Разработано в веб-студии AVSWEB">
-              <img class="main-footer__devs-img" src="../img/devs.svg">
+              <img class="main-footer__devs-img" src="../img/devs.svg" alt="Разработано веб-студией AVS Web">
             </a>
           </div>
         </div>

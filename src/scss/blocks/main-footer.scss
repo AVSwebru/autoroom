@@ -18,7 +18,7 @@
 
 .main-footer__tel {
   @include reset-link;
-  margin-right: 110px;
+  margin-right: 20px;
   color: #120005;
   font-size: 24px;
   font-weight: 500;
@@ -26,12 +26,8 @@
   &:hover {
     color: #93012a;
   }
-  @media (max-width: $breakpoint-large) {
-    margin-right: 50px;
-  }
   @media (max-width: $breakpoint-small) {
     margin-right: 0;
-    margin-bottom: 30px;
   }
 }
 
@@ -89,6 +85,7 @@
   }
   @media (max-width: $breakpoint-small) {
     position: static;
+    transform: none;
   }
 }
 
@@ -126,4 +123,9 @@
   &:hover {
     color: #aacaee;
   }
+}
+
+.main-footer__devs-img {
+  width: 122px;
+  height: 40px;
 }

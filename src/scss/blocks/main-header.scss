@@ -11,7 +11,8 @@
   &_inner-page {
     padding-top: 30px;
     margin-bottom: 50px;
-    background: url('../img/bg-innerpage-header.jpg') no-repeat 50% 50% / cover;
+    background: #141c19 url('../img/bg-innerpage-header.jpg') no-repeat 50% 50% /
+      cover;
   }
 }
 
@@ -60,10 +61,10 @@
 
 .main-header__social-link {
   @include reset-link;
-  color: #a2868d;
+  color: #96a19c;
   font-weight: 500;
   &:hover {
-    color: #a2868d;
+    color: #96a19c;
   }
 }
 
