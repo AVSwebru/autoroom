@@ -5,17 +5,19 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, background-color 0.25s;
   background-color: #d5dce4;
   color: #222;
   font-size: 18px;
   line-height: 1;
   &:hover,
   &:focus {
-    color: #222;
+    color: #fff;
+    background-color: #93012a;
     box-shadow: 0 0 0 0 #fff, 0 0 0 35px #93012a;
-    transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s, background-color 0.25s;
     .btn-action__arrow {
+      fill: #fff;
       transform: translateX(10px);
       transition: transform 0.25s;
     }
@@ -48,6 +50,8 @@
 }
 
 .btn-action__arrow {
+  width: 35px;
+  height: 20px;
   transition: transform 0.25s;
   @media (max-width: $breakpoint-medium) {
     display: none;
