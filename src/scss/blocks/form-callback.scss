@@ -63,6 +63,7 @@
   line-height: 1;
   &:focus {
     border-bottom-color: rgba(255, 255, 255, 1);
+    outline: none;
   }
 }
 
